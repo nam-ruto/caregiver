@@ -1,0 +1,207 @@
+.heroSection {
+  position: relative;
+  min-height: 650px; /* Changed from fixed height to min-height */
+  background-image: url('../../assets/images/contact/contact-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0; /* Removed padding here */
+  margin-top: -60px; /* Offset for navbar height */
+  padding-top: 80px; /* Add padding-top to account for navbar */
+}
+
+.heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 3rem;
+}
+
+.formContainer {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 550px; /* Increased from 450px */
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.formContainer h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* Reduced from 1.5rem */
+}
+
+.formGroup {
+  margin-bottom: 1rem; /* Reduced from 1.5rem */
+}
+
+.formGroup.fullWidth {
+  grid-column: span 2;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.25rem; /* Reduced from 0.5rem */
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #fafafa;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: white;
+}
+
+.formGroup textarea {
+  min-height: 100px; /* Reduced from 120px */
+  resize: vertical;
+  max-height: 150px; /* Added max-height */
+}
+
+.submitButton {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.875rem 2rem; /* Reduced padding */
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 0.75rem; /* Reduced from 1rem */
+}
+
+.submitButton:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.bodySection {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Contact Info Styles */
+.contactInfo {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.infoItem {
+  margin-bottom: 1.5rem;
+}
+
+.infoItem h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.infoItem p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Hours Table Styles */
+.hoursTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.hoursTable th,
+.hoursTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.hoursTable th {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.hoursTable tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: auto;
+    padding: 80px 1rem 2rem;
+  }
+
+  .heroContent {
+    padding: 0;
+  }
+
+  .formContainer {
+    margin: 0;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formGroup.fullWidth {
+    grid-column: auto;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}

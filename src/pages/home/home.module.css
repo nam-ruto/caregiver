@@ -1,0 +1,134 @@
+/* Sections */
+.section { padding: 72px 0px 72px 0px; }
+
+/* ===== Hero ===== */
+.hero { 
+  background: var(--neutral-white); 
+  padding-top: 92px;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero__copy { }
+.hero__actions { margin-top: 24px; }
+.hero__art img { width: 100%; height: auto; display: block; }
+
+/* ===== Story ===== */
+.story { background: var(--secondary-color); }
+/* .story { background: var(--neutral-white); } */
+.story__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+.story__bullets {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.story__bullets li {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.bullet__icon {
+  /* color: var(--primary-color); */
+  font-size: 1.2em;
+  flex-shrink: 0;
+}
+.story__images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.story__images img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+/* ===== Services ===== */
+.services { background: #fff; }
+.services__header { text-align: center; margin-bottom: 24px; }
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Home card */
+.card {
+  background: var(--neutral-white);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: grid;
+  gap: 8px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  background: var(--primary-color);
+}
+.card__icon { 
+  font-size: 28px; 
+  line-height: 1;
+  /* color: var(--primary-color); */
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card:hover .card__icon {
+  opacity: 1;
+  /* transform: scale(1.1); */
+}
+.card__title { font-family: var(--font-title); font-weight: 600; }
+.card__blurb { color: var(--muted); }
+.card__link {
+  margin-top: 4px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+.card__link:hover { text-decoration: underline; }
+
+/* ===== Home Banner:Find A Babysitter Job ===== */
+.banner {
+    background: #332B2C;
+    padding: 48px 0;
+}
+
+.banner__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.banner__p { 
+    color: #fff; 
+}
+
+.banner__h2 {
+    color: #fff;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .story__grid { grid-template-columns: 1fr; }
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .services__grid { grid-template-columns: 1fr; }
+  .section { padding: 56px 0; }
+}

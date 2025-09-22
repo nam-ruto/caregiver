@@ -1,0 +1,33 @@
+:root{
+    /* Brand colors (from your theme) */
+    --primary-color: #ffb88c;
+    --primary-rgb: 255, 184, 140;  /* RGB values of #ffb88c */
+    --secondary-color: #e5d9c4;
+    --neutral-white: #f8f9fa;
+
+    --line: rgba(0,0,0,.08);      /* subtle borders */
+    --ink-strong: #3b3232;        /* dark neutral for Sign In button */
+    --card-bg: var(--neutral-white);
+
+    --nav-offset: 88px;
+  
+    /* Surface & text */
+    --bg: var(--neutral-white);
+    --text: #222222;
+    --muted: #5e5e5e;
+  
+    /* Radii & spacing */
+    --radius: 16px;
+    --space-1: 8px;
+    --space-2: 12px;
+    --space-3: 16px;
+    --space-4: 24px;
+  
+    /* Layout */
+    --container: 1120px;
+  
+    /* Fonts */
+    --font-title: "Oswald", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    --font-body: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+  
