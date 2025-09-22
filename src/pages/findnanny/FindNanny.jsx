@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaShieldAlt, FaFilter } from 'react-icons/fa';
+import heroImage from '../../assets/images/findnanny/hero-image.png';
 import styles from './findnanny.module.css';
 import BabysitterList from './components/BabysitterList';
 import BabysitterCard from './components/BabysitterCard';
@@ -62,7 +63,7 @@ const FindNanny = () => {
 
             <div className={styles.heroImage}>
               <img
-                src="/src/assets/images/findnanny/hero-image.png"
+                src={heroImage}
                 alt="Happy babysitter engaging with children"
               />
             </div>

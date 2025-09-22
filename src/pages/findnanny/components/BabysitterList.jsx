@@ -1,10 +1,14 @@
 import BabysitterCard from './BabysitterCard';
 import styles from './babysitter.module.css';
+import sitter1 from '../../../assets/images/findnanny/sitter-1.jpg';
+import sitter2 from '../../../assets/images/findnanny/sitter-2.jpg';
+import sitter3 from '../../../assets/images/findnanny/sitter-3.jpg';
+import sitter4 from '../../../assets/images/findnanny/sitter-4.jpg';
 
 const mockBabysitters = [
   {
     id: 1,
-    image: '/src/assets/images/findnanny/sitter-1.jpg',
+    image: sitter1,
     name: 'Sophia W.',
     isVerified: true,
     rating: 4.9,
@@ -17,7 +21,7 @@ const mockBabysitters = [
   },
   {
     id: 2,
-    image: '/src/assets/images/findnanny/sitter-2.jpg',
+    image: sitter2,
     name: 'Emma R.',
     isVerified: true,
     rating: 4.8,
@@ -30,7 +34,7 @@ const mockBabysitters = [
   },
   {
     id: 3,
-    image: '/src/assets/images/findnanny/sitter-3.jpg',
+    image: sitter3,
     name: 'James M.',
     isVerified: true,
     rating: 4.7,
@@ -43,7 +47,7 @@ const mockBabysitters = [
   },
   {
     id: 4,
-    image: '/src/assets/images/findnanny/sitter-4.jpg',
+    image: sitter4,
     name: 'Maria L.',
     isVerified: true,
     rating: 5.0,
