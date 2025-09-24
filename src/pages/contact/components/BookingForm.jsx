@@ -105,7 +105,7 @@ export const BookingForm = () => {
         </div>
 
         <button type="submit" className={styles.submitButton}>
-          Submit
+          SUBMIT
         </button>
       </form>
     </div>

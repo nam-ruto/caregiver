@@ -115,8 +115,7 @@
 }
 
 .submitButton:hover {
-  background: var(--primary-dark);
-  transform: translateY(-2px);
+  background: var(--ink-strong);
 }
 
 .bodySection {
